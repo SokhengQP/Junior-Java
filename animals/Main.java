@@ -1,11 +1,11 @@
 interface User {
 	public void animalHead();
 
+	// animal tails
 	public void animalTail();
 }
 
 class Cat implements User {
-
 	@Override
 	public void animalHead() {
 		System.out.println("Head");
@@ -20,7 +20,6 @@ class Cat implements User {
 public class Main {
 	public static void main(String[] args) {
 		Cat pet = new Cat();
-
 		pet.animalHead();
 		pet.animalTail();
 	}
